@@ -1,0 +1,74 @@
+Web Development – Practical No. 4
+Aim
+Write JavaScript programs to demonstrate variables, operators, conditional statements, loops and functions.
+ 
+Html
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript Example</title>
+</head>
+
+<body>
+
+<h2>JavaScript Example</h2>
+
+<script>
+
+// Variable
+var a = 10;
+var b = 5;
+
+// Operator
+var sum = a + b;
+document.write("Addition = " + sum);
+document.write("<br>");
+
+// Conditional Statement
+if(a > b)
+{
+document.write("A is greater than B");
+}
+else
+{
+document.write("B is greater");
+}
+
+document.write("<br>");
+
+// Loop
+document.write("Numbers from 1 to 5 : <br>");
+
+for(var i=1; i<=5; i++)
+{
+document.write(i + "<br>");
+}
+
+// Function
+function multiply(x,y)
+{
+return x*y;
+}
+
+var result = multiply(4,3);
+document.write("Multiplication = " + result);
+
+</script>
+
+</body>
+</html>
+ 
+4️⃣ Output
+ :
+Copy code
+
+Addition = 15
+A is greater than B
+Numbers from 1 to 5
+1
+2
+3
+4
+5
+Multiplication = 12
+ 
