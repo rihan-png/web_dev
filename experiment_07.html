@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Position Example</title>
+
+<style>
+
+.static{
+position: static;
+background-color: lightgray;
+padding:10px;
+}
+
+.relative{
+position: relative;
+left:20px;
+background-color: lightblue;
+padding:10px;
+}
+
+.absolute{
+position: absolute;
+top:150px;
+left:200px;
+background-color: lightgreen;
+padding:10px;
+}
+
+.fixed{
+position: fixed;
+bottom:10px;
+right:10px;
+background-color: yellow;
+padding:10px;
+}
+
+/* Flexbox Layout */
+
+.container{
+display: flex;
+background-color: lightpink;
+}
+
+.box{
+background-color: orange;
+margin:10px;
+padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2>CSS Position Example</h2>
+
+<div class="static">This is Static Position</div>
+
+<div class="relative">This is Relative Position</div>
+
+<div class="absolute">This is Absolute Position</div>
+
+<div class="fixed">Fixed Position</div>
+
+<br><br>
+
+<h2>Flexbox Layout</h2>
+
+<div class="container">
+
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+
+</div>
+
+</body>
+</html>
