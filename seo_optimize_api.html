@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>API Fetch Example</title>
+
+<meta name="description" content="Example of API Fetch with CSS Animation">
+
+<style>
+
+body{
+font-family: Arial;
+text-align: center;
+}
+
+/* Animation */
+
+.box{
+width:200px;
+margin:auto;
+padding:20px;
+background-color:lightblue;
+animation: move 3s infinite;
+}
+
+@keyframes move{
+0% {background-color:lightblue;}
+50% {background-color:lightgreen;}
+100% {background-color:lightblue;}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>API Data Example</h1>
+
+<div class="box">
+<p id="data">Loading data...</p>
+</div>
+
+<script>
+
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+
+.then(response => response.json())
+
+.then(data => {
+document.getElementById("data").innerHTML = data.title;
+});
+
+</script>
+
+</body>
+</html>
